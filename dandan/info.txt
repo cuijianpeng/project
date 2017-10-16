@@ -1,0 +1,15 @@
+ajax地址是http://test.aptoday.com.cn/home/index/getPrize
+
+
+ftp://121.42.141.214
+huawei
+64882387
+
+模板在/Application/Home/View/Index
+样式表、js：/Public
+
+【链接】Document
+http://test.aptoday.com.cn/
+
+【链接】Document
+http://test.aptoday.com.cn/home/index/result

@@ -1,0 +1,8 @@
+npm-debug.log
+pages/public_assets/
+node_modules/
+dist/
+.DS_Store
+.vscode
+*.log
+*.out

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body * {
+            -webkit-text-size-adjust: none;
+        }
+        
+        .circle {
+            margin-bottom: 0.08rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            background: #3d3d3d;
+            border-radius: 50%;
+        }
+        
+        .layer {
+            margin: 0 auto;
+            background: #eee;
+            width: 3.75rem;
+            height: 6.67rem;
+        }
+        
+        .flex {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .flex .flex-column {
+            width: 3.75rem;
+            background: #eee;
+            height: 6.67rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .flex .flex-column div {
+            justify-content: center;
+            font-size: 0.12rem;
+            text-align: center;
+        }
+        
+        .flex .flex-row {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin-bottom: 0.1rem;
+        }
+        
+        .flex .flex-row div {
+            text-align: center;
+            font-size: 0.5rem;
+            line-height: 1rem;
+            width: 1rem;
+            height: 1rem;
+            border: 1px solid #ddd;
+        }
+        
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        [data-dpr="2"] div {
+            color: orange;
+        }
+        
+        [data-dpr="2"] .circle {
+            background: orange;
+        }
+        
+        [data-dpr="3"] div {
+            color: blue;
+        }
+        
+        [data-dpr="3"] .circle {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="flex">
+            <div class="flex-column">
+                <div class="circle">
+
+                </div>
+                <div>
+                    张飞
+                </div>
+                <div style="margin-top: 2rem; font-size: 0.24rem;">
+                    欢迎回来
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="./dest/demo-1.js"></script>
